@@ -1,0 +1,163 @@
+
+:root {
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+  }
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+  }
+  body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-image: url('images/meowbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+  
+  }
+  .dim-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /
+  }
+  
+
+.header {
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i {
+    color: var(--green);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+.container {
+  text-align: center;
+  background: #2c3338;
+  border-radius: 9px;
+  border-top: 10px solid var(--green);
+  border-bottom: 10px solid var(--green);
+  width: 400px;
+  height: 600px;
+  z-index: 1;
+}
+
+.box h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  color:var(--green);
+  font-size: 20px;
+  margin-top: 94px;
+}
+
+.box h4 span {
+  color: #dfdeee;
+  font-weight: lighter;
+}
+
+.box h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  color: #a1a4ad;
+  letter-spacing: 1.5px;
+  margin-top: -15px;
+  margin-bottom: 70px;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  display: block;
+  margin: 20px auto;
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 320px;
+  outline: 0;
+  color: #a9a9a9;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+::-webkit-input-placeholder {
+  color:black;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  border: 1px solid var(--green);
+}
+
+a {
+  color:var(--green);
+  text-decoration: none;
+}
+.btn1 {
+  border: 0;
+  background: var(--green);
+  color: #dfdeee;
+  border-radius: 7px;
+  width: 340px;
+  height: 49px;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn1:hover {
+    box-shadow: 0 0 10px var(--green), 0 0 10px var(--green), 0 0 10px var(--green);
+}
+
+.forgetpass {
+  position: relative;
+  float: right;
+  right: 28px;
+}

@@ -1,0 +1,117 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>All About Pets</title>
+      <link rel="stylesheet" href="admindashboard.css" />
+
+     
+    <body>
+      <div class="dim-overlay"></div>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#" class="logo">
+              <img src="images/placeholder-nurse.png">
+              <span class="nav-item">Admin</span>
+            </a></li>
+            <li id="activeD"><a href="#">
+              <i id = "icon" class="fa-solid fa-laptop-medical"></i>
+              <span class="nav-item" >Dashboard</span>
+            </a></li>
+            <li><a href="#">
+              <i id = "icon"class="fa-solid fa-users"></i>
+              <span class="nav-item">Users</span>
+            </a></li>
+            <li><a href="#">
+              <i id = "icon" class="fa-brands fa-rocketchat"></i>
+              <span class="nav-item">Report</span>
+            </a></li>
+            <li><a href="#">
+              <i id = "icon" class="fa-solid fa-calendar-days"></i>
+              <span class="nav-item">Calendar</span>
+            </a></li>
+            <li><a href="#">
+              <i id = "icon" class="fa-solid fa-gears"></i>
+              <span class="nav-item">Setting</span>
+            </a></li>
+    
+            <li>
+              <a href="#" class="logout" onclick="confirmLogout()">
+                  <i id="icon" class="fa-solid fa-right-from-bracket"></i>
+                  <span class="nav-item">Log out</span>
+              </a>
+          </li>
+
+          </ul>
+        </nav>
+    
+    
+        <section class="main">
+          <div class="main-top">
+            <h2><i id="toplogo" class="fa-solid fa-bone"></i> All About Pets </h2>
+            <i id="notificationIcon" class="fa-solid fa-bell"></i>
+          </div>
+        
+    
+          <section class="pagetable">
+            <div class="pagetable-list">
+            <h1>Admin Dashboard</h1>
+            <br>
+              <div class="content">
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Owner Name</th>
+                            <th>Name Of Pet</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Contact Number</th>
+                            <th>Age of Pet</th>
+                            <th>Pet Species Type</th>
+                            <th>Pet Breed Type</th>
+                            <th>Color of Pet</th>
+                            <th>Marking of Pet</th>
+                            <th>Gender of Pet</th>
+                            <th>Reason for Visiting</th>
+                            <th></th>
+                        </tr>
+
+            <!-- Sample Data -->
+    
+                        <tr>
+                            <td>Ken</td>
+                            <td>Snow</td>
+                            <td>kennysoriano2003@gmail.com</td>
+                            <td>Metro Manila, Quezon City</td>
+                            <td>0921 585 5690</td>
+                            <td>8</td>
+                            <td>Cat</td>
+                            <td>Himalayan</td>
+                            <td>White</td>
+                            <td>Classic Tabby</td>
+                            <td>Male</td>
+                            <td>Checkup</td>
+                            <td><button id="deletebtn" onclick="deleteRow(this)">Delete</button></td>
+
+                            
+                          </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+                <button id = "addbtn" onclick="addRow()">Add</button>
+            </div>
+       
+            </div>
+            
+          </section>
+        </section>
+      </div>
+      <script src="admindashboard.js"></script>
+      <script src="https://kit.fontawesome.com/d7e027a52b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.15.0/dist/core.js"></script>
+    </body>
+    </html>
+    </span>

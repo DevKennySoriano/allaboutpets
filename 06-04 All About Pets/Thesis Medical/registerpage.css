@@ -1,0 +1,254 @@
+:root {
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+  }
+  body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-image: url('images/meowbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+  
+  }
+
+.header {
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i {
+    color: var(--green);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+.register-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 650px;
+  padding: 1px;
+  transform: translate(-50%, -50%);
+  background:#2c3338;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  border-top: 10px solid var(--green);
+  border-bottom: 10px solid var(--green);
+}
+
+.register-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: var(--green);
+  text-align: center;
+}
+
+.register-box .user-box {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  text-transform: none;
+}
+input:focus{
+    transform: scale(1.05);
+    
+}
+#nextbtn{
+    border: 0;
+    background: var(--green);
+    color: #dfdeee;
+    border-radius: 7px;
+    width: 140px;
+    height: 49px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#okaybtn{
+    border: 0;
+    background: var(--green);
+    color: #dfdeee;
+    border-radius: 7px;
+    width: 140px;
+    height: 49px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#registration {
+	text-align: center;
+	position: relative;
+}
+#registration fieldset {
+	border: 0 none;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	position: relative;
+}
+
+#registration fieldset:not(:first-of-type) {
+	display: none;
+}
+#registration.action-button {
+	width: 100px;
+	background: red;
+	font-weight: bold;
+	color: red;
+	
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+#registration .action-button:hover, #registration .action-button:focus {
+	box-shadow: 0 0 10px var(--green), 0 0 10px var(--green), 0 0 10px var(--green);
+}
+
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: white;
+	margin-bottom: 20px;
+}
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; 
+}
+#progressbar li:first-child:after {
+	content: none; 
+}
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: var(--green);
+	color: white;
+}
+
+.input-container {
+    display: inline-block;
+    margin-right: 10px; 
+    width: 140px;
+}
+
+.error { 
+    color: red;
+ }
+ p{
+    color: white;
+ }
+ .dim-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /
+  }
+  

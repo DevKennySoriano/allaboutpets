@@ -1,0 +1,225 @@
+:root {
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+  }
+  
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+  }
+body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-image: url('images/adminbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+
+}
+
+.feedback-container {
+    max-width: 400px;
+    margin: 200px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background: #ECE9E6;  
+    background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  
+    background: linear-gradient(to left, #FFFFFF, #ECE9E6);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    opacity: 90%;
+    
+}
+h5{
+    text-decoration: none;
+    color:var(--green);
+    font-size: 16px;
+}
+a{
+    color: var(--green);
+    font-size: 16px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+
+}
+
+.header {
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i {
+    color: var(--green);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+body {
+    background-image: url('images/feedbackbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.rating {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    text-transform: capitalize;
+    padding: 0 50px 8%;
+    color: gray;
+}
+
+.rating label {
+    display: inline-block;
+    float:right;
+    padding: 0;
+    font-size: 50px;
+    cursor: pointer;
+}
+.rating label::before {
+    content: "\2606";
+    display: inline-block;
+    transition: 0.2s;
+}
+.rating label span {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: 0.15s ease-out;
+    pointer-events: none;
+    letter-spacing: -2px;
+    transform: translateY(-50%);
+}
+.rating label:hover span {
+    opacity: 1;
+    transform: none;
+    letter-spacing: 0;
+}
+.rating label:hover::before {
+    color: orange;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 4px);
+}
+.rating label:hover ~ *::before {
+    color: orange;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 4px);
+}
+.rating input:checked ~ label::before {
+    content: "\2605";
+    color: orange;
+    filter: drop-shadow(0 0 4px);
+    transform: rotate(0.2turn);
+    transition-delay: calc(0.1 * attr(data-idx integer));
+}        
+
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 3px;
+    font-size: 12px;
+    resize: none;
+    border:1px solid var(--green);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    transition: 300ms ease-in-out;
+}
+textarea:focus{
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+}
+input{
+    
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    transition: 300ms ease-in-out;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+    -13px -13px 100px #ffffff;
+  }
+button {
+    margin-top: 20px;
+    padding:10px 20px;
+    background-color:#16a085;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    }
+
+button:hover {
+    background-color:#1da740;
+}
+label{
+    font-size: 16px;
+}
+h4{
+    font-size: 16px;
+}
+h2{
+    font-size: 20px;
+}

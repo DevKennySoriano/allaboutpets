@@ -1,0 +1,185 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All About Pets</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.15.0/dist/core.js"></script>
+
+    <link rel="stylesheet" href="consultForm.css" />
+    <link rel="stylesheet" href="pageloader.css" />
+  
+  </head>
+
+  <body>
+   
+   
+    <!-- header section starts  -->
+    
+    <header class="header">
+    
+        <a href="homepage.html" class="logo"><i class="fa-solid fa-bone"></i> All About Pets </a>
+    
+        <nav class="navbar">
+            <a href="homepage.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+          
+           
+            
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+    </header>
+    
+    <!-- header section ends -->
+
+
+
+
+    <div class="loader"></div>
+
+
+
+
+	  <!-- form section starts -->
+	<section class="container" id="form">
+  
+	
+		<header><h1>Appointment Form</header></h1>
+		<form action="connect-content.php" class="form" method = "post">
+
+<!-- Owner Name  -->
+			<div class="input-box owner">
+				<label>Name of Owner</label>
+				<div class="name-input">
+				  <input id="firstname" name = "firstName" autocapitalize="off" style="text-transform: none;" type="text" placeholder="First Name" required />
+				  <input autocapitalize="off" name = "middleName" style="text-transform: none;"type="text" placeholder="Last Name" required />
+				  <input  autocapitalize="off" name = "lastName" style="text-transform: none;"type="text" placeholder="Middle Name"/>
+				</div>
+			  </div>
+ <!-- Email  -->
+	<div class="input-box email">
+		<label>Email Address</label>
+		<input id= "email"type="text" name = "email" autocapitalize="off" style="text-transform: none;" placeholder="Enter Email Address" required />
+</div>
+	  
+<!-- Address  -->	  
+		  <div class="input-box address">
+			<label>Address</label>
+			<input autocapitalize="off" name = "address" style="text-transform: none;" type="text" placeholder="Enter Address" required />
+		  </div>
+
+<!--Contact No -->
+		  <div class="input-box contact">
+			<label>Contact No</label>
+			<input id = "contact" autocapitalize="off" name = "contact" style="text-transform: none;" type="text" placeholder="09X-XXXX-XXXX or XXXX-XXXX" required>
+		  </div>
+<!-- Name of Pet -->
+		  <div class="input-box petName">
+			<label>Name of Pet</label>
+			<input  autocapitalize="off" name = "petName" style="text-transform: none;" type="text" placeholder="Enter Your Pet's Name" required />
+		  </div>
+<!-- Age of Pet  -->
+		  <div class="input-box petAge">
+			<label>How old is your pet?</label>
+			<input autocapitalize="off" name = "age" style="text-transform: none;" type="text" pattern="\d*" placeholder="Enter Age of Pet">
+		  </div>
+<!-- Pet Species Type -->
+		  <div class="input-box petType">
+			<label>Species</label>
+			<input autocapitalize="off" name = "petSpecies" style="text-transform: none;" type="text" placeholder="Enter Your Pet's Species" required />
+		  </div>
+<!-- Pet Breed Type  -->
+		  <div class="input-box petBreed">
+			<label>Breed (Specify)</label>
+			<input  autocapitalize="off" name = "petBreed" style="text-transform: none;" type="text" placeholder="Enter Your Pet's Breed" required />
+		  </div>
+<!-- Color of Pet  -->
+		  <div class="input-box petColor">
+			<label>Color</label>
+			<input  autocapitalize="off" name = "petColor" style="text-transform: none;" type="text" placeholder="Enter Your Pet's Color" required />
+		  </div>
+<!-- Marking of pet  -->
+		  <div class="input-box petMarking">
+			<label>Marking</label>
+			<input  autocapitalize="off" name = "petMarks" style="text-transform: none;" type="text" autocapitalize="off" placeholder="Enter Your Pet Marking" required />
+		  </div>
+ <!-- Pet Gender : radio type -->
+		  <div class="gender-box">
+			<h3>Pet Gender</h3>
+			<div class="gender-option">
+			  <div class="gender">
+				<input type="radio" id="Male" value ="Male" name="petgender" />
+				<label for="male">Male</label>
+			  </div>
+			  <div class="gender">
+				<input type="radio" id="Female" value ="Female" name="petgender" />
+				<label for="female">Female</label>
+			  </div>
+			</div>
+		  </div>
+ <!-- Reason For Visiting  -->
+		  <div class="input-box rVisit">
+			<label>Reason for Visiting</label><br>
+			<textarea autocapitalize="off" style="text-transform: none;" name = "reason" placeholder="Enter Your Reason For Visiting" required></textarea>
+		  </div>
+
+
+<!--Submit Btn  -->
+<button class="btn" type="button" onclick="checkFields()"> Submit </button>
+
+		  
+		</form>
+	  </section>
+
+<!-- form section ends-->
+
+
+ <!-- footer section starts  -->
+    
+ <section class="footer" id="footer">
+    
+	<div class="box-container">
+
+		
+
+		
+
+		<div class="box">
+			<h3>contact info</h3>
+			<a href="comingsoon.html"> <i class="fas fa-phone"></i> (+63) 960 813 9123 </a>
+			<a href="comingsoon.html"> <i class="fa-solid fa-location-dot"></i>2F ELJ & sons commericial building,Caloocan,Philippines,1421 </a>
+			<a href="comingsoon.html"> <i class="fas fa-envelope"></i> allaboutpetsph423@gmail.com </a>
+	  
+		</div>
+
+		<div class="box">
+			<h3>follow us</h3>
+			<a href="comingsoon.html"> <i class="fab fa-youtube"></i> youtube </a>
+			<a href="comingsoon.html"> <i class="fab fa-instagram"></i> instagram </a>
+			<a href="https://www.facebook.com/profile.php?id=100092675263131&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i> facebook </a>
+		</div>
+
+	</div>
+
+	
+
+</section>
+
+<!-- footer section ends -->
+
+
+    
+    
+    
+    
+  
+    <script src="https://kit.fontawesome.com/d7e027a52b.js" crossorigin="anonymous"></script>
+    <script src = "pageloader.js"></script>
+	<script src = "consultForm.js"></script>
+
+
+    
+     
+  </body>
+</html>

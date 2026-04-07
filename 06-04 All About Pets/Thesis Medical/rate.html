@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About Pets</title>
+<link rel="stylesheet" href="rate.css" />
+</head>
+
+
+
+<header class="header">
+    
+    <a href="homepage.html" class="logo"><i class="fa-solid fa-bone"></i> All About Pets </a>
+
+    <nav class="navbar">
+        <a href="homepage.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+        
+
+        
+    </nav>
+
+<body>
+</header>
+
+<div class="feedback-container">
+    <form action="" method="post">
+    <h5><i class="fa-solid fa-bone"></i><a href="homepage.html"> All About Pets</h5></a>
+    <h2>Give Feedback!</h2>
+    <br>
+    <label>Enter your name</label>
+	<div class="name-input">
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="Username">
+    </div>
+<br>
+    <h4>Rate Us!</h4>
+    
+    <div class="rating">
+        <input type='radio' name="rating" value="5 Star" hidden id='rating_5' data-idx='0'>	
+        <label for='rating_5'></label>
+    
+        <input type='radio' name="rating" value="4 Star" hidden id='rating_4' data-idx='1'>
+        <label for='rating_4'></label>
+    
+        <input type='radio' name="rating" value="3 Star" hidden id='rating_3' data-idx='2'>
+        <label for='rating_3'></label>
+    
+        <input type='radio' name="rating" value="2 Star" hidden id='rating_2' data-idx='3'>
+        <label for='rating_2'></label>
+    
+        <input type='radio' name="rating" value="1 Star" hidden id='rating_1' data-idx='4'>
+        <label for='rating_1'></label>
+    </div>
+
+    <br>
+
+    <textarea id="feedback-text" name = "feedback" placeholder="Enter your feedback here..."></textarea>
+    <button id="submit-btn">Submit</button>
+    <p id="thanks-message" style="display:none;">Thank you for your feedback!</p>
+</div>
+</form>
+
+<script src="loginpage.js"></script>
+<script src="mainpage.js"></script>
+<script src="adminlogin.js"></script>
+<script src="https://kit.fontawesome.com/d7e027a52b.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>

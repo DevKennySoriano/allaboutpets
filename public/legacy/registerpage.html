@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>All About Pets - Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="registerpage.css" rel="stylesheet">
+  
+</head>
+
+
+<header class="header">
+    
+    <a href="homepage.html" class="logo"><i class="fa-solid fa-bone"></i> All About Pets </a>
+
+    <nav class="navbar">
+        <a href="userloginpage.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+    </nav>
+</header>
+
+
+<body>
+<div class="dim-overlay"></div>
+<div class="register-box">
+
+<form id="registration" class="form">
+
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Account Setup</li>
+      <li>Terms and Conditions </li>
+      <li>Complete</li>
+    </ul>
+
+    <!-- 1 -->
+    <fieldset>
+
+    <h2 class="fs-title">Create your account</h2>
+    <h3 class="fs-subtitle">Personal Details</h3>
+    
+    <p>Email:</p> <input type="email" name="email" id="email" placeholder="example@gmai.com" />
+
+    <div class="input-container">
+        <p>First Name:</p>
+        <input type="text" id="Fname" name="fname" placeholder="Your First Name" />
+    </div>
+    <div class="input-container">
+        <p>Last Name:</p>
+        <input type="text" id="Lname" name="lname" placeholder="Your Last Name" />
+    </div>
+    <div class="input-container">
+        <p>Middle Name (optional):</p>
+        <input type="text" id="Mname" name="mname" placeholder="Your Middle Name" />
+    </div>
+
+    <p>Contact Number:</p><input type="text" id="contact" name="phone" placeholder="e.g 09xx-xxx-xxxx" />
+    <p>Password:</p><input type="password" name="pass" id="pass" placeholder="Password" />
+    <p>Confirm Password:</p><input type="password" name="cpass" id="cpass" placeholder="Confirm Password" />
+    <input type="button" name="next" class="next action-button" id="nextbtn" value="Next" onclick="return AccountValidate()" />
+    </fieldset>
+
+    <!-- 2 -->
+    <fieldset>
+
+        <h2 class="fs-title">Terms and Conditions</h2>
+        <h3 class="fs-subtitle">Please read carefully before using our services</h3>
+        <p>
+        wala pa wait lang hahahahahahah
+        </p>
+        <input type="button" name="next" class="next action-button" id="nextbtn" value="Agree" />
+    </fieldset>
+
+    <!-- 3 -->
+    <fieldset>
+
+        <h2 class="fs-title">Registration Complete!</h2>
+        <h3 class="fs-subtitle">Kindly wait for 3 to 7 days before you can open your account. </h3>
+        <input type="button" id="okaybtn" value="Okay" onclick="window.location.href='homepage.html'" />
+
+    </fieldset>
+
+  </form>
+  </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://kit.fontawesome.com/d7e027a52b.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="registerpage.js"></script>
+
+  
+</body>
+</html>
