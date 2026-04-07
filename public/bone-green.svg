@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Green bone icon">
+  <rect x="16" y="24" width="32" height="16" rx="8" fill="#1db954" />
+  <circle cx="16" cy="20" r="8" fill="#1db954" />
+  <circle cx="16" cy="44" r="8" fill="#1db954" />
+  <circle cx="48" cy="20" r="8" fill="#1db954" />
+  <circle cx="48" cy="44" r="8" fill="#1db954" />
+</svg>
