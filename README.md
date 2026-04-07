@@ -1,4 +1,7 @@
-# All About Pets - Portfolio Project
+# All About Pets - Thesis Proposal Project
+
+by: Soriano Kenny, Obina Aldrin, Brizo Daniella, Daguro Elijah
+
 
 ## Overview
 
